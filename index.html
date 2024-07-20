@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="desicg.css" />
+    <link rel="stylesheet" href="stars.css" />
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="animation.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-info-subtle sticky-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/learncodingfaster.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <a class="navbar-brand" href="#">
+          <p class="fw-bolder hover">Learn Code!</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" fw-medium
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav justify-content-center fixed-top mt-5 text-white">
+      <li class="nav-item">
+        <a class="nav-link active text-white" aria-current="page" href="#"
+          >Docs</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">HTML</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">CSS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" aria-disabled="true">JavaScript</a>
+      </li>
+    </ul>
+
+    <!-- //----Mouse Events--------
+      // Event	Occurs When
+      // onclick	A user clicks on an element
+      // oncontextmenu	A user right-clicks on an element
+      // ondblclick	A user double-clicks on an element
+      // onmousedown	A mouse button is pressed over an element
+      // onmouseenter	The mouse pointer moves into an element
+      // onmouseleave	The mouse pointer moves out of an element
+      // onmousemove	The mouse pointer moves over an element
+      // onmouseout	The mouse pointer moves out of an element
+      // onmouseover	The mouse pointer moves onto an element
+      // onmouseup	A mouse button is released over an element -->
+    <div class="container">
+      <h1 class="h1 mt-5">📢 All Mouse Events</h1>
+      <p class="p text-white">
+        The MouseEvent Object handles events that occur when the mouse interacts
+        with the HTML document.
+      </p>
+      <!-- Write table. -->
+      <table
+        class="table table-striped mt-5 m-auto table-hover table-bordered table-dark"
+      >
+        <thead class="table-info">
+          <tr>
+            <th scope="col ">#</th>
+            <th scope="col ">Event</th>
+            <th scope="col ">Occurs When</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>onclick:</td>
+            <td>A user clicks on an element</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>oncontextmenu:</td>
+            <td>A user right-clicks on an element</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="1">ondblclick:</td>
+            <td>A user double-clicks on an element</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>onmousedown:</td>
+            <td>A mouse button is pressed over an element</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>onmouseenter:</td>
+            <td>The mouse pointer moves into an element</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>onmouseleave:</td>
+            <td>The mouse pointer moves out of an element</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>onmousemove:</td>
+            <td>The mouse pointer moves over an element</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>onmouseout:</td>
+            <td>The mouse pointer moves out of an element</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>onmouseover:</td>
+            <td>The mouse pointer moves onto an element</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>onmouseup:</td>
+            <td>A mouse button is released over an element</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Let' Try</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="btnn container text-center">
+        <div class="container bg-white carRunning" id="myCarRunning">
+          <p class="p text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">1. onclick:</span> A user clicks
+            on an element
+          </p>
+        </div>
+        <button type="button" class="btn btn-primary carButton">Primary</button>
+
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">2. oncontextmenu:</span>A user
+            right-clicks on an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-primary carButton">Primary</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">3. ondblclick:</span>A user
+            double-clicks on an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-secondary carButton">
+          <span class="badge text-bg-danger"></span>
+        </button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">4. onmousedown:</span>A mouse
+            button is pressed over an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-success carButton">Success</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">5. onmouseenter:</span>The mouse
+            pointer moves into an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-danger carButton">Danger</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">6. onmouseleave:</span>The mouse
+            pointer moves out of an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-warning carButton">Warning</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">7. onmousemove:</span>The mouse
+            pointer moves over an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-info carButton">Info</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">8. onmouseout:</span>The mouse
+            pointer moves out of an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-light carButton">Light</button>
+
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">9. onmouseover:</span>The mouse
+            pointer moves onto an element
+          </p>
+        </div>
+
+        <button type="button" class="btn btn-light carButton">Light</button>
+        <div class="container bg-white carRunning">
+          <p class="text-center text-primary p-4 carRunningText">
+            <span class="badge text-bg-danger">10. onmouseup:</span>A mouse
+            button is released over an element
+          </p>
+        </div>
+        <button type="button" class="btn btn-light carButton">Light</button>
+      </div>
+
+      <!-- end -->
+    </div>
+    <div class="stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+
+    <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget company_widget wow fadeInLeft"
+                data-wow-delay="0.2s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.2s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                <p>
+                  Don’t miss any updates of our new templates and extensions.!
+                </p>
+                <form
+                  action="#"
+                  class="f_subscribe_two mailchimp"
+                  method="post"
+                  novalidate="true"
+                  _lpchecked="1"
+                >
+                  <input
+                    type="text"
+                    name="EMAIL"
+                    class="form-control memail"
+                    placeholder="Email"
+                  />
+                  <button class="btn btn_get btn_get_two" type="submit">
+                    Subscribe
+                  </button>
+                  <p class="mchimp-errmessage" style="display: none"></p>
+                  <p class="mchimp-sucmessage" style="display: none"></p>
+                </form>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.4s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.4s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">Android App</a></li>
+                  <li><a href="#">ios App</a></li>
+                  <li><a href="#">Desktop</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">My tasks</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget about-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.6s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.6s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                <ul class="list-unstyled f_list">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Term &amp; conditions</a></li>
+                  <li><a href="#">Reporting</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Support Policy</a></li>
+                  <li><a href="#">Privacy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="f_widget social-widget pl_70 wow fadeInLeft"
+                data-wow-delay="0.8s"
+                style="
+                  visibility: visible;
+                  animation-delay: 0.8s;
+                  animation-name: fadeInLeft;
+                "
+              >
+                <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                <div class="f_social_icon">
+                  <a href="#" class="fab fa-facebook"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+                  <a href="#" class="fab fa-pinterest"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7">
+              <p class="mb-0 f_400">
+                © cakecounter Inc.. 2019 All rights reserved.
+              </p>
+            </div>
+            <div class="col-lg-6 col-sm-5 text-right">
+              <p>
+                Made with <i class="icon_heart"></i> in
+                <a href="http://cakecounter.com" target="_blank">CakeCounter</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
